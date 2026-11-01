@@ -1,0 +1,110 @@
+/* Summer Sky: matches the Spotify theme */
+:root {
+    --sky-accent: #38bdf8;
+    --sky-accent-rgb: 56, 189, 248;
+    --sky-navy-rgb: 12, 30, 66;
+    --zen-primary-color: var(--sky-accent) !important;
+    --zen-dialog-background: rgb(16, 42, 92) !important;
+    --zen-main-browser-background-toolbar: rgba(var(--sky-navy-rgb), 0.5) !important;
+    --zen-main-browser-background-toolbar-old: rgba(var(--sky-navy-rgb), 0.5) !important;
+    --arrowpanel-background: rgb(16, 42, 92) !important;
+    --panel-background: rgb(16, 42, 92) !important;
+    --toolbar-bgcolor: transparent !important;
+    --tab-selected-bgcolor: rgba(var(--sky-accent-rgb), 0.28) !important;
+    --focus-outline-color: var(--sky-accent) !important;
+    /* Page fills the window with no frame around it */
+    --zen-element-separation: 0px !important;
+    --zen-webview-border-radius: 0px !important;
+    --zen-native-inner-radius: 0px !important;
+}
+
+:root,
+#navigator-toolbox,
+#urlbar {
+    color-scheme: dark !important;
+}
+
+/* Window background */
+#zen-browser-background {
+    background: url("background.png") center / cover no-repeat !important;
+}
+
+#zen-browser-background::before,
+#zen-browser-background::after {
+    display: none !important;
+}
+
+/* Sidebar */
+#navigator-toolbox {
+    background: rgba(var(--sky-navy-rgb), 0.5) !important;
+    background-image: none !important;
+    color: #f1f6ff !important;
+    --toolbar-color: #f1f6ff !important;
+    --toolbarbutton-icon-fill: #f1f6ff !important;
+    --tab-selected-textcolor: #ffffff !important;
+}
+
+.zen-toolbar-background {
+    background: rgba(var(--sky-navy-rgb), 0.55) !important;
+    background-image: none !important;
+}
+
+.zen-toolbar-background::before,
+.zen-toolbar-background::after {
+    display: none !important;
+}
+
+#navigator-toolbox .tab-label,
+#navigator-toolbox .tab-icon-stack,
+#navigator-toolbox toolbarbutton {
+    color: #f1f6ff !important;
+    fill: #f1f6ff !important;
+}
+
+/* See-through bars */
+#nav-bar,
+#TabsToolbar,
+#PersonalToolbar,
+#titlebar {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+/* Floating sidebar and toolbar in compact mode stay readable */
+#navigator-toolbox[zen-has-hover],
+#navigator-toolbox[has-popup-menu],
+#navigator-toolbox[zen-user-show],
+#zen-appcontent-navbar-wrapper[zen-has-hover],
+#zen-appcontent-navbar-wrapper[has-popup-menu],
+#zen-appcontent-navbar-wrapper[zen-user-show] {
+    background: rgba(var(--sky-navy-rgb), 0.82) !important;
+    backdrop-filter: blur(24px);
+}
+
+/* Address bar */
+#urlbar-background {
+    background: rgba(var(--sky-navy-rgb), 0.6) !important;
+    border-color: transparent !important;
+}
+
+#urlbar[breakout-extend] #urlbar-background {
+    background: rgb(16, 42, 92) !important;
+    border-color: rgba(var(--sky-accent-rgb), 0.5) !important;
+}
+
+/* Tabs */
+.tabbrowser-tab:hover .tab-background {
+    background: rgba(var(--sky-accent-rgb), 0.18) !important;
+}
+
+.tabbrowser-tab[selected] .tab-background,
+.tabbrowser-tab[visuallyselected] .tab-background,
+.tabbrowser-tab[multiselected] .tab-background {
+    background: rgba(var(--sky-accent-rgb), 0.28) !important;
+    box-shadow: none !important;
+}
+
+/* Page frame */
+#tabbrowser-tabbox {
+    background: transparent !important;
+}

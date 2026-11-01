@@ -1,0 +1,6 @@
+/* Summer Sky: new tab page only, websites keep their own look */
+@-moz-document url("about:newtab"), url("about:home"), url("about:blank") {
+    html, body {
+        background: url("background.png") center / cover fixed no-repeat !important;
+    }
+}
