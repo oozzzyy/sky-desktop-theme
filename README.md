@@ -2,7 +2,7 @@
 
 A matching look for Windows 11 and the Zen browser: a navy Zen and a taskbar and Start menu without blur.
 
-<!-- Add screenshots here: docs/ -->
+![Theme colors](docs/palette.svg)
 
 ## Zen browser
 
